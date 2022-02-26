@@ -1,0 +1,89 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Manrope",monospace;
+  background: hsl(217, 19%, 10%);
+  padding: 20px;
+  position: relative;
+}
+section.container {
+  max-width: 509px;
+  background: hsl(217, 19%, 38%);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+section.container button {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  background: hsl(150, 100%, 66%);
+}
+section.container button:active {
+  box-shadow: 0 0 50px hsl(150, 100%, 56%);
+}
+img[alt="placeholder"] {
+  margin-bottom: 30px;
+}
+section.container p, div.skt-bdy, div.skt-bdy.second {
+  margin: 20px auto;
+}
+section.container p#advise-id {
+  color: hsl(150, 100%, 66%);
+  text-transform: capitalize;
+}
+section.container p.advise {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 800;
+}
+div.skt-bdy:nth-child(1) {
+  height: 1rem;
+  width: 5.2rem;
+  background: #A6A8BB;
+  position: relative;
+  overflow: hidden;
+}
+div.skt-bdy.second {
+  height: 50px;
+  width: 100%;
+  background: #A6A8BB;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+}
+span.skt {
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5));
+  display: inline-block;
+  position: absolute;
+  animation: skt 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+@keyframes skt {
+  from {
+    left: 0%;
+  } to {
+    left: 100%;
+  }
+}
