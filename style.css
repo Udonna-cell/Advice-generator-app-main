@@ -40,7 +40,9 @@ section.container button {
   background: hsl(150, 100%, 66%);
 }
 section.container button:active {
-  box-shadow: 0 0 50px hsl(150, 100%, 56%);
+  box-shadow: 0 0 50px hsl(150, 100%, 56%),
+0 0 55px hsl(150, 100%, 66%),
+0 0 60px hsl(150, 100%, 76%);
 }
 img[alt="placeholder"] {
   margin-bottom: 30px;
