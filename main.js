@@ -7,15 +7,19 @@ async function advise() {
   // body...
   let response = await fetch("https://api.adviceslip.com/advice");
   let data = await response.json();
-  
-  adviceId.innerText = `advise#${data.slip.id}`;
-  advice.innerText = `”${data.slip.advice}”`;
-  
+  display(data)
+}
+function display(data) {
+  if (adviceId.innerText == (`advise#${data.slip.id}`)){
+    advise()
+  }else {
+    adviceId.innerText = `advise#${data.slip.id}`;
+    advice.innerText = `”${data.slip.advice}”`;
     sktBdy.style.display = 'none';
-  sktBdy2.style.display = 'none';
-  adviceId.style.display = 'block';
-  advice.style.display = 'block';
-  
+    sktBdy2.style.display = 'none';
+    adviceId.style.display = 'block';
+    advice.style.display = 'block';
+  }
 }
 function anim() {
   sktBdy.style.display = 'block';
