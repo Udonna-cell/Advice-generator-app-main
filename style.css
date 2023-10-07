@@ -74,6 +74,9 @@ div.skt-bdy.second {
   overflow: hidden;
   backdrop-filter: blur(20px);
 }
+.skt-bdy {
+  border-radius: 5px;
+}
 span.skt {
   height: 100%;
   width: 20%;
